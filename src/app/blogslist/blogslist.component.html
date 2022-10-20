@@ -1,0 +1,29 @@
+<div class="blogListWrapper">
+  <div *ngIf="blogs.length <= 0">
+    <app-loader></app-loader>
+  </div>
+  <div class="content_wrapper">
+    <div *ngIf="blogs.length > 0" class="detailsPart">
+      <ul>
+        <li *ngFor="let item of blogs">
+          <a
+            routerLinkActive="active"
+            [routerLink]="['/blogs', item.id]"
+            class="listitems"
+            >User: {{ item.userId }}</a
+          >
+          <div>
+            <p>Title: <br />{{ item.title }}</p>
+            <p>
+              Post: <br />
+              {{ item.body }}
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="details">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

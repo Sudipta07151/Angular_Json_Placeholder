@@ -1,0 +1,12 @@
+<div *ngIf="userDetailData; else content">
+  <div *ngFor="let detail of userDetailData | keyvalue">
+    <div *ngIf="detail.key == 'address'">
+      <span>
+        {{ detail.value | json }}
+      </span>
+    </div>
+  </div>
+
+  <p>{{ userDetailData.username }}</p>
+</div>
+<ng-template #content>...</ng-template>

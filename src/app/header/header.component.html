@@ -1,0 +1,19 @@
+<nav>
+  <div class="left_side" (click)="handleToHome()">SUDI</div>
+  <div class="right_side">
+    <div>
+      <a
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink=""
+        >Home</a
+      >
+    </div>
+    <div>
+      <a routerLinkActive="active" routerLink="users">Users</a>
+    </div>
+    <div>
+      <a routerLinkActive="active" routerLink="blogs">Posts</a>
+    </div>
+  </div>
+</nav>

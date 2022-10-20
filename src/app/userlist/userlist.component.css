@@ -1,0 +1,30 @@
+.blogListWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailsPart {
+    width: 40vw
+}
+
+.details {
+    width: 60vw
+}
+
+.listitems {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.content_wrapper {
+    display: flex;
+    flex: 2 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.active {
+    text-shadow: 2px 2px rgba(141, 141, 141, 0.601);
+}
