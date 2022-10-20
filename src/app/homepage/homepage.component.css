@@ -1,0 +1,12 @@
+carousel {
+    color: white;
+    font-size: x-large;
+    background-color: pink;
+    text-align: center;
+    border: 5px solid red;
+    overflow: hidden;
+}
+
+carousel div {
+    border: 2px solid black;
+}
