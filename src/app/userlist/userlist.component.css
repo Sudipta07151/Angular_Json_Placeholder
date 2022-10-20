@@ -1,6 +1,7 @@
 .blogListWrapper {
     display: flex;
     justify-content: space-around;
+    background-color: orange;
 }
 
 .detailsPart {
@@ -16,6 +17,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
     color: black;
+    width: 100vw;
+    background-color: white;
+    border: 3px solid red;
 }
 
 .content_wrapper {
