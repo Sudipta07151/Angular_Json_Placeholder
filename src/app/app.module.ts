@@ -12,8 +12,8 @@ import { LoaderComponent } from './loader/loader.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { UserspageComponent } from './userspage/userspage.component';
 import { UserlistComponent } from './userlist/userlist.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserformComponent } from './userform/userform.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,14 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     LoaderComponent,
     NotfoundComponent,
     UserspageComponent,
-    UserlistComponent
+    UserlistComponent,
+    UserformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    IvyCarouselModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

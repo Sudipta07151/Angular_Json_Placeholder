@@ -1,0 +1,7 @@
+<h1>USERFORM</h1>
+<form [formGroup]="formgroup">
+  <ng-container *ngFor="let inputitem of formGroupInputs">
+    <input type="text" [formControlName]="inputitem.formControlName" />
+  </ng-container>
+</form>
+<p>{{ formgroup.value | json }}</p>
